@@ -1,0 +1,12 @@
+{
+  "name": "todo_server",
+  "version": "1.0.0",
+  "description": "todo list server",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Bijay Kumar Yadav",
+  "license": "ISC"
+}
