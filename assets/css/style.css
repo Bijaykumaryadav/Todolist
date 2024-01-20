@@ -2,9 +2,33 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
   }
+  body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
   #container {
+    /* margin-top: 20px; */
     width: 500px;
+    height: 400px;
     margin: 0 auto;
+    border: 1px solid red;
+    border-radius: 5px 5px 5px 5px ;
+    padding: 5px 10px 5px 10px;
+    background: linear-gradient(to bottom right, blue, #c10c85,blue); 
+    position: relative;
+  }
+  input{
+    border-radius: 5px 5px 5px 5px;
+  }
+  input:hover{
+    box-shadow: #0079bf;
+    border: 2px solid red;
+    animation: normal 2s ease-in-out;
   }
   ul {
     list-style-type: none;
@@ -82,16 +106,59 @@
     text-align: center;
   }
   .add-task {
+    margin-top: 10px;
     width: 100%;
       outline: none;
       font-size: 15px;
       padding: 11px;
-      border: 1px solid #f3f3f3;
+      border: 1.5px solid wheat;
       margin-bottom: 3px;
   }
+
   #total-tasks {
-    margin-bottom: 20px;
-    font-size: 13px;
-      margin-left: 2px;
-      color: gray;
-  }
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 20px;
+    color: gray;
+}
+
+  #date {
+    margin-left: 10px;
+    display: flex;
+    margin-right: 50px;
+    justify-content: space-between;
+    /* align-items: center; Align items vertically in the center */
+}
+#category{
+  width: 180px;
+  height: 25px;
+  border-radius: 5px;
+}
+#category:hover{
+  border: 2px solid black;
+}
+#taskDate{
+  width: 180px;
+  height: 25px;
+  border-radius: 5px;
+}
+#taskDate:hover{
+  border: 2px solid black;
+}
+#buttons{
+  margin: 50px;
+  display: flex;
+  justify-content: space-around;
+  margin-left: 0px;
+  margin-right: 20px;
+  border-radius: 10px;
+}
+#buttons button{
+  margin-right: 30px;
+}
+#buttons button:hover{
+  border: 2px solid black;
+  border-radius: 5px;
+}

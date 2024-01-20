@@ -11,16 +11,38 @@
   <body>
     <h1><%= pageTitle %></h1>
     <div id="container">
+      <p style="font-size: 20px ; padding: 0px;margin: 0px; padding-top: 20px;">Description</p>
       <input placeholder="Add a task" class="add-task" id="add" data-helloWord="asdasdas"/>
-      <span id="total-tasks">Total tasks: <span id="tasks-counter">0</span></span>
-      <ul id="list">
-        <!-- <li>
-          <input type="checkbox" id="task1" data-id="12" class="custom-checkbox">
-          <label for="task1">Buy groceries</label>
-          <img src="delete_FILL0_wght400_GRAD0_opsz24.png" class="delete" data-id="12" />
-        </li> -->
-      </ul>
+      <div id="date">
+        <div>
+            <p style="font-size: 20px ; padding: 0px;margin: 0px; padding-top: 20px;">Category</p>
+            <select id="category" class="category">
+                <option value="personal">Personal</option>
+                <option value="work">Work</option>
+                <option value="school">School</option>
+                <option value="college">College</option>
+                <option value="office">Office</option>
+                <option value="other">Other</option>
+            </select>
+        </div>
+        <div>
+            <p style="font-size: 20px ; padding: 0px;margin: 0px; padding-top: 20px;">Date</p>
+            <input type="date" id="taskDate" class="task-date">
+        </div>
     </div>
+    <div id="buttons">
+      <button id="addTaskButton">+&nbsp;&nbsp;Add Task</button>
+      <button id="deleteTaskButton"><span><img src="/images/delete_FILL0_wght400_GRAD0_opsz24.png" alt="" style="height: 16px; width: 16px; padding-top: 4px;"></span>&nbsp; &nbsp;Delete Task</button>
+  </div>
+  <span id="total-tasks">Total tasks: <span id="tasks-counter">0</span></span>
+    </div>
+    <ul id="list">
+      <li>
+        <input type="checkbox" id="task1" data-id="12" class="custom-checkbox">
+        <!-- <label for="task1">Buy groceries</label> -->
+        <!-- <img src="/images/delete_FILL0_wght400_GRAD0_opsz24.png" class="delete" data-id="12" /> -->
+      </li>
+    </ul>
     <!-- <script src="todo.js"></script> -->
     <script src="/js/todoModule.js"></script>
     <script type="text/javascript">
